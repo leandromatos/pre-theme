@@ -1,0 +1,1025 @@
+[
+//
+// TABS (REGULAR)
+//
+    // Tab set
+    {
+        "class": "tabset_control",
+        "layer0.texture": "",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1,
+        "content_margin": [58, 0],
+        "tab_overlap": 0,
+        "tab_min_width": 160,
+        "tab_height": 44,
+        "mouse_wheel_switch": false
+    }, {
+        "class": "tabset_control",
+        "settings": ["mouse_wheel_switches_tabs"],
+        "mouse_wheel_switch": true,
+    },
+    // Tab element
+    {
+        "class": "tab_control",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1
+    },
+    // Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [8, 0]
+    },
+    // Tab hover state
+    {
+        "class": "tab_control",
+        "attributes": ["hover"]
+    },
+    // Tab active state
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "",
+        "layer0.tint": [41, 41, 41],
+    },
+//
+// TAB BUTTONS
+//
+    // Tab close button
+    {
+        "class": "tab_close_button",
+        "layer0.texture": "Theme - Pre/icons/close.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [123, 123, 123]
+    }, {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [8, 8]
+    }, {
+        "class": "tab_close_button",
+        "parents": [{
+            "class": "tab_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [248, 248, 248]
+    }, {
+        "class": "tab_close_button",
+        "parents": [{
+            "class": "tab_control",
+            "attributes": ["dirty"]
+        }],
+        "layer0.texture": "Theme - Pre/icons/close.png",
+        "layer0.tint": [56, 255, 103]
+    },
+    // Tab close button pressed
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
+    },
+//
+// TAB LABELS
+//
+    {
+        "class": "tab_label",
+        "fade": false,
+        "fg": [123, 123, 123],
+        "font.size": 12.0,
+    }, {
+        "class": "tab_label",
+        "parents": [{
+            "class": "tab_control",
+            "attributes": ["hover"]
+        }],
+        "fg": [248, 248, 248]
+    }, {
+        "class": "tab_label",
+        "parents": [{
+            "class": "tab_control",
+            "attributes": ["selected"]
+        }],
+        "fg": [56, 255, 103]
+    }, {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": false
+    },
+//
+// FOLD BUTTONS
+//
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Theme - Pre/icons/fold-closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "content_margin": [8, 8]
+    }, {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Pre/icons/fold-open.png"
+    },
+//
+// SCROLLBARS
+//
+    {
+        "class": "scroll_bar_control",
+        "layer0.texture": "",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [25, 25, 25],
+        "layer0.inner_margin": 0,
+        "blur": false
+    }, {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [25, 25, 25],
+        "layer0.inner_margin": 0,
+        "blur": false
+    }, {
+        "class": "scroll_corner_control",
+        "layer0.texture": "",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [25, 25, 25],
+        "layer0.inner_margin": 0
+    },
+    // Pucks (non-overlay)
+    {
+        "class": "puck_control",
+        "layer0.texture": "",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 0],
+        "content_margin": [3, 12],
+        "blur": false
+    },
+    // Horizontal puck is much smaller since I never use it except to judge
+    // where I am in the view.
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.inner_margin": [0, 2],
+        "content_margin": [12, 3],
+        "blur": false
+    },
+    // Overlay scrollbars
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
+        "overlay": false
+    }, {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "",
+        "layer0.inner_margin": [0, 5],
+
+        "blur": false
+    }, {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.inner_margin": [5, 0],
+        "blur": false
+    },
+    // Pucks (overlay)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "",
+        "layer0.tint": [69, 69, 69],
+        "layer0.inner_margin": [0, 5],
+        "content_margin": [5, 40],
+        "blur": false
+    }, {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "",
+        "layer0.tint": [69, 69, 69],
+        "layer0.inner_margin": [5, 0],
+        "content_margin": [40, 5],
+        "blur": false
+    },
+//
+// MINI MAP
+//
+    {
+        "class": "minimap_control",
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255],
+        "viewport_opacity": 1,
+    }, {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [255, 255, 255],
+        "viewport_opacity": {
+            "target": 0.0,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
+    }, {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": {
+            "target": 0.4,
+            "speed": 20.0,
+            "interpolation": "smoothstep"
+        },
+    },
+//
+// EMPTY WINDOW BACKGROUND
+//
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0
+    },
+//
+// GRID LAYOUT
+//
+    {
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [41, 41, 41]
+    },
+//
+// MINI MAP
+//
+    {
+        "class": "minimap_control",
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [248, 248, 248, 35],
+        "viewport_opacity": 1.0
+    }, {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [248, 248, 248, 35],
+        "viewport_opacity": {
+            "target": 0.0,
+            "speed": 10.0,
+            "interpolation": "smoothstep"
+        }
+    }, {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": 1.0
+    },
+//
+// DIALOG
+//
+    {
+        "class": "dialog",
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 1.0
+    },
+//
+// PROGRESS BAR
+//
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [30, 30, 30],
+        "layer0.opacity": 1.0
+    }, {
+        "class": "progress_gauge_control",
+        "layer0.tint": [144, 144, 144],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
+    },
+//
+// LABELS
+//
+    // General labels
+    {
+        "class": "label_control",
+        "color": [248, 248, 248]
+    },
+    // Text field labels
+    {
+        "class": "label_control",
+        "parents": [{
+            "class": "panel_control"
+        }],
+    },
+    // Button labels
+    {
+        "class": "label_control",
+        "parents": [{
+            "class": "button_control"
+        }],
+    },
+//
+// STATUS BAR
+//
+    // Status bar container
+    {
+        "class": "status_bar",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [25, 25, 25],
+        "content_margin": 10
+    },
+    // Status bar button
+    {
+        "class": "status_button",
+        "min_size": [100, 0]
+    },
+    // Status bar label
+    {
+        "class": "label_control",
+        "parents": [{
+            "class": "status_bar"
+        }],
+        "color": [123, 123, 123],
+    },
+//
+// SIDEBAR
+//
+    // Sidebar container
+    {
+        "class": "sidebar_container",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 39, 0, 0],
+    },
+    // Sidebar tree
+    {
+        "class": "sidebar_tree",
+        "row_padding": [10, 6],
+        "indent": 18,
+        "indent_offset": 24,
+        "indent_top_level": false,
+        "dark_content": true,
+    },
+    // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "font.size": 12,
+        "color": [248, 248, 248],
+        "font.bold": false,
+    },
+    // Sidebar heading selected
+    {
+        "class": "sidebar_heading",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
+    },
+    // Sidebar entry
+    {
+        "class": "sidebar_label",
+        "font.size": 14,
+        "color": [123, 123, 123],
+        "font.bold": false,
+        "font.italic": false,
+        "font.option": ["gray_antialias"],
+    }, {
+        "class": "sidebar_label",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["hover"]
+        }],
+        "color": [248, 248, 248],
+    },
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["expandable"]
+        }],
+        "color": [123, 123, 123]
+    }, {
+        "class": "sidebar_label",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["expandable", "hover"]
+        }],
+        "color": [248, 248, 248]
+    }, {
+        "class": "sidebar_label",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["expandable"]
+        }],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
+    // Sidebar entry selected
+    {
+        "class": "sidebar_label",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
+        "color": [248, 248, 248],
+    },
+    // Sidebar entry transient
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+//
+// SIDEBAR - OPEN FILE ICONS
+//
+    // Sidebar file close
+    {
+        "class": "close_button",
+        "layer0.texture": "Theme - Pre/icons/close.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8],
+        "layer0.tint": [123, 123, 123],
+    }, {
+        "class": "close_button",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [123, 123, 123]
+    }, {
+        "class": "close_button",
+        "parents": [{
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [123, 123, 123]
+    }, {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "Theme - Pre/icons/close.png",
+        "layer0.tint": [56, 255, 103]
+    },
+    // Sidebar file close button pressed
+    {
+        "class": "close_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
+    },
+//
+// SIDEBAR - GENERAL FILE ICONS
+//
+    // Sidebar group closed
+    {
+        "class": "disclosure_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Pre/icons/group-closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+    // Sidebar group open
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Pre/icons/group-open.png"
+    },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "layer0.texture": "Theme - Pre/icons/folder-closed.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    // Sidebar folder loading
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture": {
+            "keyframes": [
+                "Theme - Pre/icons/spinner/spinner-01.png",
+                "Theme - Pre/icons/spinner/spinner-02.png",
+                "Theme - Pre/icons/spinner/spinner-03.png",
+                "Theme - Pre/icons/spinner/spinner-04.png",
+                "Theme - Pre/icons/spinner/spinner-05.png",
+                "Theme - Pre/icons/spinner/spinner-06.png",
+                "Theme - Pre/icons/spinner/spinner-07.png",
+                "Theme - Pre/icons/spinner/spinner-08.png",
+                "Theme - Pre/icons/spinner/spinner-09.png",
+                "Theme - Pre/icons/spinner/spinner-10.png",
+                "Theme - Pre/icons/spinner/spinner-11.png",
+                "Theme - Pre/icons/spinner/spinner-12.png",
+                "Theme - Pre/icons/spinner/spinner-13.png",
+                "Theme - Pre/icons/spinner/spinner-14.png",
+                "Theme - Pre/icons/spinner/spinner-15.png",
+                "Theme - Pre/icons/spinner/spinner-16.png",
+                "Theme - Pre/icons/spinner/spinner-17.png",
+                "Theme - Pre/icons/spinner/spinner-18.png",
+                "Theme - Pre/icons/spinner/spinner-19.png",
+
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+//
+// STANDARD TEXT BUTTONS
+//
+    // Default button state
+    {
+        "class": "button_control",
+        "min_size": [75, 29],
+        "layer0.tint": [25, 25, 25],
+    },
+    // Hover button state
+    {
+        "class": "button_control",
+        "attributes": ["hover"],
+        "layer0.tint": [41, 41, 41]
+    },
+    // Pressed button state
+    {
+        "class": "button_control",
+        "attributes": ["pressed"],
+        "layer0.tint": [41, 41, 41]
+    },
+//
+// TEXT INPUT FIELD
+//
+    // Text input field item
+    {
+        "class": "text_line_control",
+        "layer0.texture": "",
+        "layer0.tint": [248, 248, 248],
+        "layer0.opacity": 1,
+        "layer0.inner_margin": [20],
+        "layer1.tint": [69, 69, 69],
+        "layer1.opacity": 1,
+        "content_margin": [0, 0, -4, 2]
+    },
+//
+// PANEL BACKGROUNDS
+//
+    // Bottom panel background
+    {
+        "class": "panel_control",
+        "layer0.texture": "",
+        "layer0.inner_margin": [10, 1],
+        "layer0.opacity": 1,
+        "layer0.tint": [25, 25, 25],
+        "content_margin": [0, 0, 0, 0]
+    },
+//
+// OVERLAY PANELS
+//
+    // Command Panel
+    {
+        "class": "overlay_control",
+        "layer1.tint": [25, 25, 25],
+        "layer1.inner_margin": [0, 0, 0, 0],
+        "layer1.opacity": 1.0,
+        "content_margin": [10, 10, 10, 10]
+    },
+    // Command Panel list item style (cmd + shift + p)
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.tint": [25, 25, 25],
+        "layer0.inner_margin": [0, 0, 0, 0],
+        "layer0.opacity": 1.0
+    },
+    // Command Panel selected list item style (cmd + p)
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [41, 41, 41]
+    },
+    // Quick panel project setting (project manager) (cmd + ctrl + p)
+    {
+        "class": "quick_panel",
+        "row_padding": [20, 10],
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0
+    },
+    // Quick Panel row default style (project manager)
+    {
+        "class": "quick_panel_row",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0
+    },
+    // Row panel style inside comman panel (cmd + shift + p)
+    {
+        "class": "quick_panel_row",
+        "parents": [{
+            "class": "overlay_control"
+        }],
+        "layer0.tint": [25, 25, 25],
+    },
+    // Quick panel (project) style inside overlay_control (cmd + shift + p)
+    {
+        "class": "quick_panel",
+        "parents": [{
+            "class": "overlay_control"
+        }],
+        "row_padding": [20, 10],
+        "layer0.tint": [25, 25, 25, 0],
+        "layer0.opacity": 1.0
+    },
+    // Quick Panel selected list item style
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [41, 41, 41],
+        "layer1.opacity": 0.0
+    },
+    // Panel labels
+    {
+        "class": "quick_panel_label",
+        "fg": [123, 123, 123],
+        "match_fg": [56, 255, 103],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [56, 255, 103]
+    },
+    // Panel labels
+    {
+        "class": "quick_panel_label",
+        "parents": [{
+            "class": "overlay_control"
+        }],
+        "fg": [123, 123, 123],
+        "match_fg": [56, 255, 103],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [56, 255, 103]
+    },
+    // Panels sublabels
+    {
+        "class": "quick_panel_path_label",
+        "fg": [97, 97, 97, 255],
+        "match_fg": [56, 255, 103],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [56, 255, 103]
+    },
+    // Panels data / score
+    {
+        "class": "quick_panel_score_label",
+        "fg": [56, 255, 103],
+        "selected_fg": [255, 255, 255, 255]
+    },
+//
+// AUTOCOMPLETE
+//
+    {
+        "class": "popup_control",
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0,
+        "content_margin": [10, 10]
+    }, {
+        "class": "auto_complete",
+        "row_padding": [12, 6],
+        "layer0.tint": [25, 25, 25],
+        "layer0.opacity": 1.0
+    }, {
+        "class": "auto_complete_label",
+        "fg": [123, 123, 123],
+        "match_fg": [56, 255, 103],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [56, 255, 103]
+    }, {
+        "class": "table_row",
+        "layer0.tint": [41, 41, 41],
+        "layer0.opacity": 0.0,
+    }, {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+//
+// TOOL TIP
+//
+    {
+        "class": "tool_tip_control",
+        "layer0.tint": [41, 41, 41],
+        "layer0.inner_margin": [0, 0],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    }, {
+        "class": "tool_tip_label_control",
+        "color": [255, 255, 255]
+    },
+//
+// BOTTOM PANEL BUTTONS
+//
+    // Button group middle
+    {
+        "class": "icon_button_control",
+        "layer1.texture": "",
+        "layer1.opacity": 0,
+        "layer1.tint": [25, 25, 25],
+        "content_margin": 7
+    }, {
+        "class": "icon_button_control",
+        "attributes": ["selected"],
+        "layer0.opacity": 0
+    },
+    // Button group left
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.texture": ""
+    },
+    // Button group left
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.texture": ""
+    }, {
+        "class": "icon_button_control",
+        "attributes": ["left", "selected"],
+        "layer0.texture": ""
+    },
+    // Button group right
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"],
+        "layer0.texture": ""
+    }, {
+        "class": "icon_button_control",
+        "attributes": ["right", "selected"],
+        "layer0.texture": ""
+    },
+    // Button single
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"],
+        "layer0.texture": ""
+    }, {
+        "class": "icon_button_control",
+        "attributes": ["left", "right", "selected"],
+        "layer0.texture": ""
+    },
+//
+// BOTTOM PANEL ICONS - GROUP 1
+//
+    // Regex search button
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Pre/icons/regex.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_regex",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_regex",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+    // Case sensitive search button
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Pre/icons/casesens.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_case",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_case",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+    // Match whole word search button
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Pre/icons/wholeword.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_whole_word",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_whole_word",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+//
+// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+//
+    // Show search context button
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Pre/icons/context.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_context",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_context",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+    // Use search buffer
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Pre/icons/buffer.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_use_buffer",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_use_buffer",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+//
+// BOTTOM PANEL ICONS - GROUP 2
+//
+    // Reverse search direction button (ST2 only)
+    {
+        "class": "icon_reverse",
+        "layer0.texture": "Theme - Pre/icons/reverse.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_reverse",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_reverse",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+    // Search wrap button
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Pre/icons/wrap.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_wrap",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_wrap",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+    // Search in selection button
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Pre/icons/selection.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_in_selection",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_in_selection",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+//
+// BOTTOM PANEL ICONS - GROUP 3
+//
+    // Preserve case button
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Pre/icons/casesens.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_preserve_case",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_preserve_case",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+//
+// BOTTOM PANEL ICONS - GROUP 4
+//
+    // Highlight results button
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Pre/icons/highlight.png",
+        "layer0.tint": [123, 123, 123],
+        "layer0.opacity": 1,
+        "content_margin": 8
+    }, {
+        "class": "icon_highlight",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    }, {
+        "class": "icon_highlight",
+        "parents": [{
+            "class": "icon_button_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.tint": [56, 255, 103]
+    },
+//
+// THEME OPTIONS
+//
+    // Large fonts
+    {
+        "class": "sidebar_container",
+        "settings": ["pre_theme_screencasts"],
+        "content_margin": [0, 59, 0, 0],
+    }, {
+        "class": "sidebar_label",
+        "settings": ["pre_theme_screencasts"],
+        "font.size": 18,
+    }, {
+        "class": "sidebar_heading",
+        "settings": ["pre_theme_screencasts"],
+        "font.size": 16,
+    }, {
+        "class": "sidebar_tree",
+        "settings": ["pre_theme_screencasts"],
+        "row_padding": [10, 12],
+    }, {
+        "class": "tabset_control",
+        "settings": ["pre_theme_screencasts"],
+        "tab_min_width": 180,
+        "tab_height": 64,
+    }, {
+        "class": "tab_label",
+        "settings": ["pre_theme_screencasts"],
+        "font.size": 14.0,
+        "layer1.tint": [125, 25, 25],
+        "font.face": "Ubuntu"
+    },
+]
