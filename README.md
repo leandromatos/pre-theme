@@ -26,6 +26,8 @@ Double-clicking on **alfred/Pre.alfredappearance** file
 
 ![iTerm2](https://raw.githubusercontent.com/leandromatos/pre-theme/gh-pages/assets/image/screenshots/iterm2-with-zsh-theme.png)
 
+**Note:** iTerm2 with ZSH Theme.
+
 ### Install using Git
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
@@ -103,6 +105,8 @@ Set big text including tabs and sidebar
 ## Terminal (Mac)<a id="terminal"></a>
 
 ![Terminal (Mac)](https://raw.githubusercontent.com/leandromatos/pre-theme/gh-pages/assets/image/screenshots/terminal-with-zsh-theme.png)
+
+**Note:** Terminal (Mac) with ZSH Theme.
 
 ### Install using Git
 
