@@ -1,7 +1,7 @@
 # Custom IS-UZ Theme based in Dracula and Agnoster's Theme
 # @author Leandro Matos <leandromatos@is-uz.com>
 
-# IS-UZ Theme v0.0.1
+# IS-UZ Theme v1.0.1
 #
 # https://github.com/leandromatos/is-uz
 #
@@ -83,7 +83,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment green black "%(!.%{%F{pink}%}.)✝"
+    prompt_segment green black "%(!.%{%F{pink}%}.)$user"
   fi
 }
 
@@ -105,7 +105,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue default '%~'
+  prompt_segment cyan black '%~'
   # echo $(pwd | sed -e "s,^$HOME,~," | sed "s@\(.\)[^/]*/@\1/@g")
 }
 
