@@ -1,7 +1,7 @@
-# Custom IS-UZ Theme based in Dracula and Agnoster's Theme
+# Custom Pre Theme based in Agnoster's Theme
 # @author Leandro Matos <leandromatos@is-uz.com>
 
-# IS-UZ Theme v1.0.1
+# Pre Theme v1.0.2
 #
 # https://github.com/leandromatos/is-uz
 #
@@ -11,28 +11,11 @@
 # http://mit-license.org
 #
 # @author Leandro Matos <leandro@is-uz.com>
-
-# Agnoster's Theme - https://gist.github.com/3712874
-# A Powerline-inspired theme for ZSH
 #
 # # README
 #
 # In order for this theme to render correctly, you will need a
 # [Powerline-patched font](https://gist.github.com/1595572).
-#
-# In addition, I recommend the
-# [Solarized theme](https://github.com/altercation/solarized/) and, if you're
-# using it on Mac OS X, [iTerm 2](http://www.iterm2.com/) over Terminal.app -
-# it has significantly better color fidelity.
-#
-# # Goals
-#
-# The aim of this theme is to only show you *relevant* information. Like most
-# prompts, it will only show git information when in a git working directory.
-# However, it goes a step further: everything from the current user and
-# hostname to whether the last call exited with an error to whether background
-# jobs are running in this shell will all be displayed automatically when
-# appropriate.
 
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
@@ -83,7 +66,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment green black "%(!.%{%F{pink}%}.)$user"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)✝"
   fi
 }
 
@@ -105,7 +88,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment cyan black '%~'
+  prompt_segment blue black '%~'
   # echo $(pwd | sed -e "s,^$HOME,~," | sed "s@\(.\)[^/]*/@\1/@g")
 }
 
