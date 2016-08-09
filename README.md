@@ -52,7 +52,7 @@ Download using the [GitHub .zip download](https://github.com/leandromatos/pre-th
 
 ![Sublime](https://raw.githubusercontent.com/leandromatos/pre-theme/gh-pages/assets/image/screenshots/sublime.png)
 
-### Install usign Git
+### Install using Git
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
