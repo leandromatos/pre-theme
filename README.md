@@ -1,6 +1,6 @@
 #Pre Theme
 
-A simple and dark theme enough for [Alfred](#alfred), [iTerm](#iterm), [Sublime](#sublime), [Terminal (Mac)](#terminal) and [ZSH](#zsh).
+A simple and dark theme enough for [Alfred](#alfred), [iTerm](#iterm), [Sublime](#sublime), [Terminal (Mac)](#terminal), [ZSH](#zsh) and [Sequel Pro](#sequel-pro).
 
 ## Alfred<a id="alfred"></a>
 
@@ -167,6 +167,30 @@ $ ln -s $PRE_THEME/zsh/pre.zsh-theme $OH_MY_ZSH/themes/pre.zsh-theme
 
 1. Go to *Terminal > Preferences*
 2. In *Font* click in *Change …* and select family *Incosolata for Powerline*, typeface *Medium* and size *14*
+
+## Sequel Pro <a id="sequel-pro"></a>
+
+![Sequel Pro](https://raw.githubusercontent.com/leandromatos/pre-theme/gh-pages/assets/image/screenshots/sequel-pro.png)
+
+### Install using Git
+
+If you are a git user, you can install the theme and keep up to date by cloning the repo:
+
+```
+$ git clone https://github.com/leandromatos/pre-theme/
+```
+
+### Install manually
+
+1. Download using the [GitHub .zip download](https://github.com/leandromatos/pre-theme/archive/master.zip) option and unzip them.
+
+### Activate the theme
+
+1. Go to *Sequel Pro > Preferences > Query Editor*
+2. Click *"Gear" icon*
+3. Click *Click Import Color Scheme...*
+4. Select the **Select the Pre.spTheme file** file
+
 
 ## Contributing
 
