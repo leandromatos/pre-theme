@@ -2,12 +2,10 @@
 
 ### Install manually
 
-1. Open the Slack team you’d like to customize
-2. Click your team name to open the Team Menu
-3. Choose *Preferences*
-4. Select the *Sidebar Theme* tab
-5. If necessary, click *Customize your theme and share it with others*
-6. Paste the colors below into the box *Copy and paste these values to share your custom theme with others*
+1. Go to User **Menu > Preferences > Sidebar Theme**
+2. In the bottom of the window, look for a **"customize your theme and share it with others"** link
+3. Copy and paste the values below
+
 
 ```
 #191919,#292929,#191919,#23FF5E,#292929,#FFFFFF,#23ff5e,#23FF5E
