@@ -10,5 +10,5 @@
 6. Paste the colors below into the box *Copy and paste these values to share your custom theme with others*
 
 ```
-#292929,#191919,#F8F8F2,#292929,#7B7B7B,#F8F8F2,#38FF67,#FB0030
+#191919,#292929,#191919,#23FF5E,#292929,#FFFFFF,#23ff5e,#23FF5E
 ```
