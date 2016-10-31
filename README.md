@@ -210,4 +210,4 @@ If you want to help, please read the [Contributing guide](https://github.com/lea
 
 ## License
 
-[MIT License](http://leandromatos.mit-license.org/) © Leandro Matos,
+[MIT License](http://leandromatos.mit-license.org/) © Leandro Matos
