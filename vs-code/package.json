@@ -1,0 +1,26 @@
+{
+    "name": "pre",
+    "displayName": "Pre ",
+    "publisher": "leandromatos",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leandromatos/pre-theme"
+      },
+    "description": "",
+    "version": "0.0.3",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Pre",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Pre-color-theme.json"
+            }
+        ]
+    }
+}
