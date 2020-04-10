@@ -5,9 +5,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/leandromatos/pre-theme"
-      },
+    },
     "description": "",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.32.0"
     },
