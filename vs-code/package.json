@@ -7,7 +7,7 @@
         "url": "https://github.com/leandromatos/pre-theme"
     },
     "description": "",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.32.0"
     },
