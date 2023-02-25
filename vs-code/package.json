@@ -1,26 +1,26 @@
 {
-    "name": "pre",
-    "displayName": "Pre ",
-    "publisher": "leandromatos",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/leandromatos/pre-theme"
-    },
-    "description": "",
-    "version": "0.0.6",
-    "engines": {
-        "vscode": "^1.32.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Pre",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Pre-color-theme.json"
-            }
-        ]
-    }
+  "name": "pre",
+  "displayName": "Pre",
+  "publisher": "leandromatos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandromatos/pre-theme"
+  },
+  "description": "",
+  "version": "0.0.7",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Pre",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Pre-color-theme.json"
+      }
+    ]
+  }
 }
