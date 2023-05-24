@@ -1,0 +1,16 @@
+{
+  "name": "pre-theme",
+  "version": "1.0.0",
+  "description": "Pre theme for Insomnia REST client",
+  "license": "MIT",
+  "author": "Leandro Matos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandromatos/pre-themes"
+  },
+  "main": "index.js",
+  "insomnia": {
+    "name": "pre-theme",
+    "description": "Pre theme for the Insomnia REST client"
+  }
+}
