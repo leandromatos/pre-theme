@@ -1,21 +1,18 @@
-# Custom Pre Theme based in Agnoster's Theme
-# @author Leandro Matos <leandromatos@is-uz.com>
-
-# Pre Theme v1.0.2
+# Pre Theme
 #
-# https://github.com/leandromatos/is-uz
+# https://github.com/leandromatos/pre-theme
 #
 # Copyright 2015, All rights reserved
 #
 # Code licensed under the MIT license
 # http://mit-license.org
 #
-# @author Leandro Matos <leandro@is-uz.com>
+# @author Leandro Matos <contato@leandromatos.com.br>
 #
 # # README
 #
 # In order for this theme to render correctly, you will need a
-# [Powerline-patched font](https://gist.github.com/1595572).
+# [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts).
 
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts

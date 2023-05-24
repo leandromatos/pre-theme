@@ -153,20 +153,20 @@ $ ln -s $PRE_THEME/zsh/pre.zsh-theme $OH_MY_ZSH/themes/pre.zsh-theme
 
 1. Go to your **~/.zshrc** file and set **ZSH_THEME="pre"**.
 
-***Note:*** The theme requires specific fonts to display the status icons correctly in the terminal. Please [download](https://github.com/powerline/fonts) and install all variations named "Inconsolata".
+***Note:*** The theme requires specific fonts to display the status icons correctly in the terminal. Please [download](https://github.com/ryanoasis/nerd-fonts) and install all variations named "FiraCode Nerd Font".
 
 ### Recommended settings for a better UI experience:
 
 **If you use iTerm2**
 
 1. Go to *iTerm2 > Preferences > Profiles > Text Tab*
-2. In *Regular-Font* click in *Change font* and select family *Menlo*, typeface *Regular* and size *14*
-3. In *Non-ASCII Font* click in *Change font* and select family *Incosolata-g for Powerline*, typeface *g* and size *14*
+2. In *Font* click to *Change font* and select family *FiraCode Nerd Font*, typeface *Regular*, size *16*, vertical align *90*, and horizontal align *110*.
+3. In *Non-ASCII Font* click in *Change font* and select family *FiraCode Nerd Font*, typeface *g* and size *14*
 
 **If you use terminal (mac)**
 
 1. Go to *Terminal > Preferences*
-2. In *Font* click in *Change …* and select family *Incosolata for Powerline*, typeface *Medium* and size *14*
+2. In *Font* click in *Change …* and select family *FiraCode Nerd Font*, typeface *Regular* and size *16*
 
 ## Sequel Pro <a id="sequel-pro"></a>
 
