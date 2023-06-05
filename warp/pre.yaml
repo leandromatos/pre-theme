@@ -4,7 +4,7 @@ details: darker
 foreground: "#f8f8f8"
 terminal_colors:
   bright:
-    black: "#292929"
+    black: "#7b7b7b"
     blue: "#7b7a7a"
     cyan: "#00e5ff"
     green: "#23ff5e"
